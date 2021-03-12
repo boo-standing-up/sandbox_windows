@@ -1,10 +1,22 @@
-import "./styles.css";
+/**
+ * const,letの変数宣言
+ */
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+// const boo = "boo";
+// console.log(boo);
+
+/**
+ * オブジェクトの定義
+ */
+
+// const boo = { name:"たぬき", age: 14 };
+// console.log(boo)
+
+/**
+ * 配列
+ */
+
+//  const boo =["きつね","ねこ"];
+//  boo.push("たぬき");
+//  console.log(boo[0]);
+//  console.log(boo[2]);
