@@ -26,10 +26,10 @@
 // const age = 14;
 // console.log('私の名前は${name}です。年齢は${age}です。');
 
-const name = "boo";
-const age = 14;
-const messege = `私の名前は${name}です。年齢は${age}です。`;
-console.log(messege);
+// const name = "boo";
+// const age = 14;
+// const messege = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(messege);
 
 /**
  * アロー関数
@@ -61,14 +61,57 @@ console.log(messege);
 
 // 分割代入
 
-const booBody = {
-  name: "boo",
-  age: 14
-};
+// const booBody = {
+//   name: "boo",
+//   age: 14,
+//   top: "150cm"
+// };
 
-const messege1 = `私の名前は${booBody.name}です。`;
-console.log(messege1);
+// const messege1 = `私の名前は${booBody.name}です。`;
+// console.log(messege1);
 
-// const { name, age } = booBody;
-// const messege5 = `私の名前は${name}です。年齢は${age}です。`;
+// const { name, age, top } = booBody;
+// const messege5 = `私の名前は${name}です。年齢は${age}です。身長は${top}です。`;
 // console.log(messege5);
+
+/**
+ * デフォルト値
+//  */
+
+// const ichikumi = ["tarou" ,"jirou","saburou"];
+// // console.log(ichikumi);
+//  const sayHollo = (name="ゲスト")=>console.log(`こんにちは${name}さん`);
+// sayHollo(ichikumi);
+
+/**
+ * スブレット構文
+ */
+
+//  const classname=["tarou","jirou","saburou","boo"];
+//  console.log(classname);
+//  console.log(...classname);
+
+// const classname1 = ["tarou", "jirou", "saburou", "boo"];
+// const classname2 = ["hanako", "kaede", "ayaka", "booko"];
+//  const className =(classname1,classname2)=>
+//  console.log(`このクラスは${classname1}${classname2}です。`);
+
+// className(...classname2);
+
+//まとめる構文
+// const [no1,no2,...className3]=classname1;
+// console.log(no2);
+// console.log(className3);
+
+// コピーと統合
+// const classAll = [...classname1, ...classname2];
+// console.log(classAll);
+// classAll[2] = "sabutarou";
+
+/**
+ * mapやフィルターを使った配列の処理
+//  */
+const classname1 = ["tarou", "jirou", "saburou", "boo"];
+const classname2 = ["hanako", "kaede", "ayaka", "booko"];
+const numClass = [1, 2, 3, 4];
+const classAll = [...classname1, ...classname2];
