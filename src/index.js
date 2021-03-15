@@ -111,7 +111,33 @@
 /**
  * mapやフィルターを使った配列の処理
 //  */
+// const ichikumi = ["tarou", "jirou", "saburou", "boo"];
+// const classname1 = ichikumi.map((name) => {
+//   return name;
+// });
+// // console.log(classname1); //1番
+// ichikumi.map((name) => console.log(name));//２番
+
 const classname1 = ["tarou", "jirou", "saburou", "boo"];
 const classname2 = ["hanako", "kaede", "ayaka", "booko"];
 const numClass = [1, 2, 3, 4];
+// const classAll = [...classname1, ...classname2];
+// classAll.map((name)=>console.log(name));
+// const kisuu = numClass.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(kisuu);
+
 const classAll = [...classname1, ...classname2];
+// classAll.map((name, index) =>
+//   console.log(`あなたは${index + 1}位の${name}さんです`)
+// );
+
+const bookumisan = classAll.map((name) => {
+  if (name === "boo") {
+    return `あなたは${name}です`;
+  } else {
+    return `あなたは${name}さんです`;
+  }
+});
+console.log(bookumisan);
